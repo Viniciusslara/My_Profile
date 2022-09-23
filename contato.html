@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Contato</title>
+        <link rel="stylesheet" href="css/stylecontato.css">
+    </head>
+    
+    <body>
+        
+        <header>
+            <img class="logo" src="icons/logo.svg" alt="LogoMarca">
+        </header>
+
+        <section class="container">
+            
+            <div class="grid"">
+                <div><a href="index.html">HOME</a></div>
+                <div><a href="pessoal.html">PESSOAL</a></div>
+                <div style="color: black;"><b>CONTATO</b></div>
+            </div>
+
+        </section>
+        
+        <section class="container-contato">
+
+            <form action="mailto:viniciuslara@alunos.utfpr.edu.br" method="POST" target="_blank">
+                <p class="form-contato">
+                    <label for="nome">Nome</label><br>
+                    <input class="dados-form" type="text" id="nome" name="nome" placeholder="Digite seu Nome">
+                </p>
+                <br>
+                <p class="form-contato">
+                    <label for="email">Email</label><br>
+                    <input class="dados-form" type="email" id="email" name="email" placeholder="Digite seu Email">
+                </p>
+                <br>
+                <p class="form-contato">
+                    <input class="dados-form" type="text" id="msg" name="msg" placeholder="Mensagem">
+                </p>
+                <br>
+
+                <button onclick="mensagem()">ENVIAR</button>
+
+                <script>
+                    function mensagem(){
+
+                        var msg = document.querySelector('#nome').value;
+                        alert(msg+" você será redirecionado para seu email para realizar o contato");
+                    }
+                </script>
+            
+            </form>
+
+
+        </section>
+    
+    
+    </body>
+</html>
